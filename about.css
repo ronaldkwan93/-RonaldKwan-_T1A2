@@ -1,0 +1,127 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+}
+body header .aboutnav {
+  text-decoration: underline;
+}
+body header .heading {
+  display: flex;
+}
+body header .homebutton {
+  display: flex;
+  margin-top: 20px;
+}
+body header .homebutton button {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+body header .homebutton button:hover {
+  box-shadow: 2px 2px;
+  color: grey;
+}
+body header .logo img {
+  width: 100px;
+}
+body header nav {
+  display: flex;
+  margin: 0;
+}
+body header nav ul {
+  padding: 5px;
+}
+body header nav ul a {
+  text-decoration: none;
+  color: black;
+}
+body header nav button {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+body main .hometext {
+  display: flex;
+}
+body main .hometext img {
+  width: 350px;
+  margin-left: 50px;
+  border: 10px solid grey;
+  border-radius: 10px;
+}
+body main .hometext .homephoto:hover {
+  box-shadow: 10px 10px;
+  color: rgb(187, 223, 221);
+}
+body main .hometext {
+  margin-left: 50px;
+}
+body main .hometext h1 {
+  font-size: 60px;
+  margin: 0;
+}
+body main .follow {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+body main .follow p {
+  margin: 5px;
+  font-size: 20px;
+}
+body main .follow ul {
+  padding: 0;
+  margin: 0;
+}
+body main .follow img {
+  width: 25px;
+  padding: 0;
+}
+body .second {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+body .second .clients {
+  width: 200px;
+  margin-right: 150px;
+}
+body .second .clientlogo {
+  display: flex;
+}
+body .second .clientlogo img {
+  padding: 0;
+  width: 50px;
+}
+body footer .footerlogo {
+  display: flex;
+  justify-content: center;
+}
+body footer .footerlogo .pic img {
+  width: 50px;
+  padding-left: 32px;
+  padding-right: 16px;
+}
+body footer .logotag {
+  display: flex;
+  justify-content: center;
+}
+body footer .logotag .tags {
+  padding-left: 10px;
+}
+body footer .logotag .tags button {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=about.css.map */

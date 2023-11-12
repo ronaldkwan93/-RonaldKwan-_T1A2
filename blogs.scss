@@ -1,0 +1,208 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    header {
+        display: flex;
+        justify-content: space-between;
+        .blogsnav {
+            text-decoration: underline;
+        }
+        .heading {
+            display: flex;
+        }
+        .homebutton {
+            display: flex;
+            margin-top:20px;
+            button {
+                background-color: black;
+                color: white;
+                padding: 0 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-left: 25px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                }
+            button:hover {
+                box-shadow: 2px 2px;
+                color: grey;
+            }
+        }
+        .logo img {
+            width: 100px;
+        }
+
+        nav {
+            display: flex;
+            margin: 0;
+
+            ul {
+                padding: 5px;
+                
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            button{
+                background: black;
+                color: white;
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+    main {
+        .first {
+            justify-content: center;
+            .homephoto {
+                img {
+                    width: 400px;
+                }
+                img:hover{
+                    box-shadow: 10px 10px;
+                    color: rgb(187, 223, 221);
+                }
+            }
+            .hometext {
+                margin-left: 50px;
+                .firsthalftitle {
+                    display: flex;
+                    }
+                h1 {
+                    font-size: 60px;
+                    margin:0;
+                }
+                .interact {
+                    margin: 0 0 0 10px;
+                    display: inline-block;
+                    position: relative;
+                }
+                .interact::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: 
+                    #000000;
+                    transform-origin: bottom right;
+                    transition: transform 0.5s ease-out;
+                }
+                .interact:hover:after {
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+            display: flex;
+            .homebutton {
+                display: flex;
+                margin-top:20px;
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: 14px 28px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    }
+                button:hover {
+                    box-shadow: 5px 5px;
+                    color: rgb(107, 201, 201);
+                }        
+                h5 {
+                    margin: 5px;
+                    margin-left: 20px;
+                    margin-top: 15px;
+                    display: inline-block;
+                    position: relative;
+                }
+                h5::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: 
+                    #000000;
+                    transform-origin: bottom right;
+                    transition: transform 0.5s ease-out;
+                }
+                h5:hover:after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                }
+            }
+
+            .follow {
+            display: flex;
+            margin-top: 150px;
+            p {
+                margin: 5px;
+                font-size: 20px;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            img {
+                width: 25px;
+                padding: 0;
+            }
+            }
+        }
+        .second {
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            .clients {
+                width: 200px;
+                margin-right: 150px;
+            }
+            .clientlogo {
+                display: flex;
+                img {
+                    padding: 0;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    footer {
+
+    .footerlogo {
+        display: flex;
+        justify-content: center;
+        .pic {
+            img {
+                width: 50px;
+                padding-left: 32px;
+                padding-right: 16px;
+            }
+        }
+    }
+        .logotag {
+            display: flex;
+            justify-content: center;
+            .tags {
+                padding-left: 10px;
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: 0 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

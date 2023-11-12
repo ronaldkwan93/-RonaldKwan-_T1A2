@@ -1,0 +1,144 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    header {
+        display: flex;
+        justify-content: space-between;
+        .aboutnav {
+            text-decoration: underline;
+        }
+        .heading {
+            display: flex;
+        }
+        .homebutton {
+            display: flex;
+            margin-top:20px;
+            button {
+                background-color: black;
+                color: white;
+                padding: 0 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                margin-left: 25px;
+                margin-bottom: 20px;
+                font-size: 20px;
+                }
+            button:hover {
+                box-shadow: 2px 2px;
+                color: grey;
+            }
+        }
+        .logo img {
+            width: 100px;
+        }
+
+        nav {
+            display: flex;
+            margin: 0;
+
+            ul {
+                padding: 5px;
+                
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            button{
+                background: black;
+                color: white;
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+    main {
+            .hometext {
+                display: flex;
+                img {
+                    width: 350px;
+                    margin-left: 50px;
+                    border: 10px solid grey;
+                    border-radius: 10px;
+                    
+                }
+                .homephoto:hover{
+                    box-shadow: 10px 10px;
+                    color: rgb(187, 223, 221);
+                }
+            }
+            .hometext {
+                margin-left: 50px;
+                h1 {
+                    font-size: 60px;
+                    margin:0;
+                } 
+            }
+
+            .follow {
+            display: flex;
+            justify-content: center;
+            margin-left: 200px;
+            p {
+                margin: 5px;
+                font-size: 20px;
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+            }
+            img {
+                width: 25px;
+                padding: 0;
+            }
+            }
+        }
+        .second {
+            display: flex;
+            margin-top: 100px;
+            justify-content: center;
+            .clients {
+                width: 200px;
+                margin-right: 150px;
+            }
+            .clientlogo {
+                display: flex;
+                img {
+                    padding: 0;
+                    width: 50px;
+                }
+            }
+        }
+        
+
+    footer {
+
+    .footerlogo {
+        display: flex;
+        justify-content: center;
+        .pic {
+            img {
+                width: 50px;
+                padding-left: 32px;
+                padding-right: 16px;
+            }
+        }
+    }
+        .logotag {
+            display: flex;
+            justify-content: center;
+            .tags {
+                padding-left: 10px;
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: 0 20px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
