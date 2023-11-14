@@ -47,9 +47,37 @@ body header nav button {
   color: white;
   cursor: pointer;
 }
-body main .first {
-  justify-content: center;
+body main .first h1 {
+  font-size: 64px;
+  margin: 0;
+}
+body main .first .hometext {
   display: flex;
+  justify-content: center;
+}
+body main .first .information {
+  margin-top: 80px;
+  margin-left: 50px;
+}
+body main .first .information .infoTwo img {
+  width: 64px;
+  margin-right: 20px;
+}
+body main .first .information .infoTwo .infoTwoA {
+  display: flex;
+  margin-top: 10px;
+}
+body main .first .information .infoTwo .infoTwoB {
+  display: flex;
+  margin-top: 10px;
+}
+body main .first .information .infoTwo .infoTwoC {
+  display: flex;
+  margin-top: 10px;
+}
+body main .first .information .infoTwo .infoTwoD {
+  display: flex;
+  margin-top: 10px;
 }
 body main .first .homephoto img {
   width: 400px;
@@ -58,81 +86,37 @@ body main .first .homephoto img:hover {
   box-shadow: 10px 10px;
   color: rgb(187, 223, 221);
 }
-body main .first .hometext {
-  margin-left: 50px;
-}
-body main .first .hometext .firsthalftitle {
+body main .first .contactform {
   display: flex;
+  flex-direction: column;
+  height: 50%;
+  margin-top: 50px;
 }
-body main .first .hometext h1 {
-  font-size: 60px;
-  margin: 0;
+body main .first .contactform input {
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: 0;
+  width: 50%;
+  height: 30px;
+  font-weight: 700;
+  padding-bottom: 20px;
 }
-body main .first .hometext .interact {
-  margin: 0 0 0 10px;
-  display: inline-block;
-  position: relative;
-}
-body main .first .hometext .interact::after {
-  content: "";
-  position: absolute;
+body main .first .contactform .message {
+  height: 80px;
+  margin-bottom: 10px;
   width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
 }
-body main .first .hometext .interact:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-body main .first .hometext p {
-  margin: 0;
-}
-body main .first .homebutton {
-  display: flex;
-  margin-top: 20px;
-}
-body main .first .homebutton button {
+body main .first .contactform button {
   background-color: black;
   color: white;
   padding: 14px 28px;
   border-radius: 10px;
   cursor: pointer;
 }
-body main .first .homebutton button:hover {
-  box-shadow: 5px 5px;
-  color: rgb(107, 201, 201);
-}
-body main .first .homebutton h5 {
-  margin: 5px;
-  margin-left: 20px;
-  margin-top: 15px;
-  display: inline-block;
-  position: relative;
-}
-body main .first .homebutton h5::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-body main .first .homebutton h5:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 body main .first .follow {
   display: flex;
-  margin-top: 150px;
+  justify-content: center;
+  margin-top: 50px;
 }
 body main .first .follow p {
   margin: 5px;
@@ -146,21 +130,8 @@ body main .first .follow img {
   width: 25px;
   padding: 0;
 }
-body main .second {
-  display: flex;
-  margin-top: 100px;
-  justify-content: center;
-}
-body main .second .clients {
-  width: 200px;
-  margin-right: 150px;
-}
-body main .second .clientlogo {
-  display: flex;
-}
-body main .second .clientlogo img {
-  padding: 0;
-  width: 50px;
+body footer {
+  margin-top: 200px;
 }
 body footer .footerlogo {
   display: flex;

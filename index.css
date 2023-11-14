@@ -30,6 +30,10 @@ body header .homebutton button:hover {
 }
 body header .logo img {
   width: 100px;
+  opacity: 0.7;
+}
+body header .logo img:hover {
+  opacity: 1;
 }
 body header nav {
   display: flex;
@@ -48,18 +52,28 @@ body header nav button {
   cursor: pointer;
 }
 body main .first {
-  justify-content: center;
   display: flex;
+  justify-content: center;
 }
-body main .first .homephoto img {
+body main .first .homephoto > img {
+  border-radius: 10px;
   width: 400px;
-}
-body main .first .homephoto img:hover {
   box-shadow: 10px 10px;
   color: rgb(187, 223, 221);
+  transition: 0.4s;
+}
+body main .first .homephoto > img:hover {
+  transform: scale(1.05);
 }
 body main .first .hometext {
   margin-left: 50px;
+}
+body main .first .hometext button {
+  background-color: black;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 body main .first .hometext .firsthalftitle {
   display: flex;
@@ -102,6 +116,7 @@ body main .first .homebutton button {
   padding: 14px 28px;
   border-radius: 10px;
   cursor: pointer;
+  margin-bottom: 100px;
 }
 body main .first .homebutton button:hover {
   box-shadow: 5px 5px;
@@ -132,7 +147,7 @@ body main .first .homebutton h5:hover:after {
 }
 body main .first .follow {
   display: flex;
-  margin-top: 150px;
+  margin-top: 20px;
 }
 body main .first .follow p {
   margin: 5px;
@@ -147,20 +162,27 @@ body main .first .follow img {
   padding: 0;
 }
 body main .second {
+  padding-top: 50px;
   display: flex;
   margin-top: 100px;
   justify-content: center;
 }
 body main .second .clients {
-  width: 200px;
-  margin-right: 150px;
+  padding-top: 30px;
 }
 body main .second .clientlogo {
   display: flex;
 }
 body main .second .clientlogo img {
-  padding: 0;
-  width: 50px;
+  margin-left: 50px;
+  width: 120px;
+  transition: 0.7s;
+}
+body main .second .clientlogo img:hover {
+  transform: scale(1.05);
+}
+body footer {
+  margin-top: 100px;
 }
 body footer .footerlogo {
   display: flex;

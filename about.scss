@@ -54,28 +54,44 @@ body {
     }
 
     main {
+        margin: auto;
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            font-size: 30px;
+        }
             .hometext {
-                display: flex;
-                img {
-                    width: 350px;
-                    margin-left: 50px;
-                    border: 10px solid grey;
+               display: flex;
+                width: 50%;
+                margin:auto;
+                justify-content: center;
+                text-align: center;
+                h4 {
+                    border-bottom: 2px solid black;
+                    padding-bottom: 10px;
+                    width: 90%;
+                    margin: auto;
+                }
+                .aboutme {
+                    background-color: lightsalmon;
                     border-radius: 10px;
-                    
                 }
-                .homephoto:hover{
-                    box-shadow: 10px 10px;
-                    color: rgb(187, 223, 221);
+                img {
+                    margin-left: 50px;
+                    border-radius: 10px;
                 }
             }
-            .hometext {
-                margin-left: 50px;
-                h1 {
-                    font-size: 60px;
-                    margin:0;
-                } 
+          .skills {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 60px;
             }
-
+            div {
+                margin:20px
+            }
+          }  
             .follow {
             display: flex;
             justify-content: center;
@@ -94,26 +110,11 @@ body {
             }
             }
         }
-        .second {
-            display: flex;
-            margin-top: 100px;
-            justify-content: center;
-            .clients {
-                width: 200px;
-                margin-right: 150px;
-            }
-            .clientlogo {
-                display: flex;
-                img {
-                    padding: 0;
-                    width: 50px;
-                }
-            }
-        }
+        
         
 
     footer {
-
+        margin-top: 100px;
     .footerlogo {
         display: flex;
         justify-content: center;

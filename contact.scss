@@ -54,7 +54,40 @@ body {
 
     main {
         .first {
-            justify-content: center;
+            h1 {
+                font-size: 64px;
+                margin: 0;
+            }
+            .hometext {
+                display: flex;
+                justify-content: center;
+            }
+            .information {
+                margin-top: 80px;
+                margin-left: 50px;
+                .infoTwo {
+                    img {
+                        width: 64px;
+                        margin-right: 20px;
+                    }
+                    .infoTwoA {
+                    display: flex;
+                    margin-top: 10px;
+                    }
+                    .infoTwoB {
+                        display: flex;
+                        margin-top: 10px;
+                    }
+                    .infoTwoC {
+                        display: flex;
+                        margin-top: 10px;
+                    }
+                    .infoTwoD {
+                        display: flex;
+                        margin-top: 10px;
+                    }
+                }
+            }
             .homephoto {
                 img {
                     width: 400px;
@@ -64,85 +97,41 @@ body {
                     color: rgb(187, 223, 221);
                 }
             }
-            .hometext {
-                margin-left: 50px;
-                .firsthalftitle {
+            
+            .contactform {
                     display: flex;
+                    flex-direction: column;
+                    // align-items: center;
+                    height: 50%;
+                    margin-top: 50px;
+                    input {
+                        border: 0;
+                        border-bottom: 2px solid black;
+                        outline: 0;
+                        width: 50%;
+                        height: 30px;
+                        font-weight: 700;
+                        padding-bottom: 20px;
                     }
-                h1 {
-                    font-size: 60px;
-                    margin:0;
-                }
-                .interact {
-                    margin: 0 0 0 10px;
-                    display: inline-block;
-                    position: relative;
-                }
-                .interact::after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    transform: scaleX(0);
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: 
-                    #000000;
-                    transform-origin: bottom right;
-                    transition: transform 0.5s ease-out;
-                }
-                .interact:hover:after {
-                    transform: scaleX(1);
-                    transform-origin: bottom left;
-                }
-                p {
-                    margin: 0;
-                }
-            }
-            display: flex;
-            .homebutton {
-                display: flex;
-                margin-top:20px;
-                button {
-                    background-color: black;
-                    color: white;
-                    padding: 14px 28px;
-                    border-radius: 10px;
-                    cursor: pointer;
+                    .message {
+                        height: 80px;
+                        margin-bottom: 10px;
+                        width: 100%;
                     }
-                button:hover {
-                    box-shadow: 5px 5px;
-                    color: rgb(107, 201, 201);
-                }        
-                h5 {
-                    margin: 5px;
-                    margin-left: 20px;
-                    margin-top: 15px;
-                    display: inline-block;
-                    position: relative;
-                }
-                h5::after {
-                    content: '';
-                    position: absolute;
-                    width: 100%;
-                    transform: scaleX(0);
-                    height: 2px;
-                    bottom: 0;
-                    left: 0;
-                    background-color: 
-                    #000000;
-                    transform-origin: bottom right;
-                    transition: transform 0.5s ease-out;
-                }
-                h5:hover:after {
-                        transform: scaleX(1);
-                        transform-origin: bottom left;
-                }
+                    button {
+                        background-color: black;
+                        color: white;
+                        padding: 14px 28px;
+                        border-radius: 10px;
+                        cursor: pointer;
+                    }
             }
 
+            
             .follow {
             display: flex;
-            margin-top: 150px;
+            justify-content: center;
+            margin-top: 50px;
             p {
                 margin: 5px;
                 font-size: 20px;
@@ -157,26 +146,10 @@ body {
             }
             }
         }
-        .second {
-            display: flex;
-            margin-top: 100px;
-            justify-content: center;
-            .clients {
-                width: 200px;
-                margin-right: 150px;
-            }
-            .clientlogo {
-                display: flex;
-                img {
-                    padding: 0;
-                    width: 50px;
-                }
-            }
-        }
     }
 
     footer {
-
+        margin-top: 200px;
     .footerlogo {
         display: flex;
         justify-content: center;

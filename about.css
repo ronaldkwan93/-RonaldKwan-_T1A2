@@ -48,25 +48,45 @@ body header nav button {
   color: white;
   cursor: pointer;
 }
+body main {
+  margin: auto;
+}
+body main h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  font-size: 30px;
+}
 body main .hometext {
   display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
-body main .hometext img {
-  width: 350px;
-  margin-left: 50px;
-  border: 10px solid grey;
+body main .hometext h4 {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  width: 90%;
+  margin: auto;
+}
+body main .hometext .aboutme {
+  background-color: lightsalmon;
   border-radius: 10px;
 }
-body main .hometext .homephoto:hover {
-  box-shadow: 10px 10px;
-  color: rgb(187, 223, 221);
-}
-body main .hometext {
+body main .hometext img {
   margin-left: 50px;
+  border-radius: 10px;
 }
-body main .hometext h1 {
-  font-size: 60px;
-  margin: 0;
+body main .skills {
+  display: flex;
+  justify-content: center;
+}
+body main .skills img {
+  width: 60px;
+}
+body main .skills div {
+  margin: 20px;
 }
 body main .follow {
   display: flex;
@@ -85,21 +105,8 @@ body main .follow img {
   width: 25px;
   padding: 0;
 }
-body .second {
-  display: flex;
+body footer {
   margin-top: 100px;
-  justify-content: center;
-}
-body .second .clients {
-  width: 200px;
-  margin-right: 150px;
-}
-body .second .clientlogo {
-  display: flex;
-}
-body .second .clientlogo img {
-  padding: 0;
-  width: 50px;
 }
 body footer .footerlogo {
   display: flex;

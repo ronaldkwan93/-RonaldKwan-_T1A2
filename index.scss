@@ -28,6 +28,10 @@ body {
             }
         .logo img {
             width: 100px;
+            opacity: 0.7;
+        }
+        .logo img:hover {
+            opacity: 1;
         }
 
         nav {
@@ -54,18 +58,28 @@ body {
 
     main {
         .first {
+            display: flex;
             justify-content: center;
-            .homephoto {
-                img {
+            .homephoto > img{ 
+                    border-radius: 10px;
                     width: 400px;
-                }
-                img:hover{
                     box-shadow: 10px 10px;
                     color: rgb(187, 223, 221);
-                }
+                    transition: 0.4s;
             }
+            .homephoto >img:hover {
+                        transform: scale(1.05);
+            }    
+            
             .hometext {
                 margin-left: 50px;
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: 14px 28px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
                 .firsthalftitle {
                     display: flex;
                     }
@@ -98,8 +112,8 @@ body {
                 p {
                     margin: 0;
                 }
+                
             }
-            display: flex;
             .homebutton {
                 display: flex;
                 margin-top:20px;
@@ -109,11 +123,13 @@ body {
                     padding: 14px 28px;
                     border-radius: 10px;
                     cursor: pointer;
+                    margin-bottom: 100px;
                     }
                 button:hover {
                     box-shadow: 5px 5px;
                     color: rgb(107, 201, 201);
                 }        
+                
                 h5 {
                     margin: 5px;
                     margin-left: 20px;
@@ -138,11 +154,10 @@ body {
                         transform: scaleX(1);
                         transform-origin: bottom left;
                 }
-            }
-
+        }
             .follow {
             display: flex;
-            margin-top: 150px;
+            margin-top: 20px;
             p {
                 margin: 5px;
                 font-size: 20px;
@@ -158,25 +173,29 @@ body {
             }
         }
         .second {
+            padding-top: 50px;
             display: flex;
             margin-top: 100px;
             justify-content: center;
             .clients {
-                width: 200px;
-                margin-right: 150px;
+                padding-top: 30px;
             }
             .clientlogo {
                 display: flex;
                 img {
-                    padding: 0;
-                    width: 50px;
+                    margin-left: 50px;
+                    width: 120px;
+                    transition: 0.7s;
+                }
+                img:hover {
+                    transform: scale(1.05);
                 }
             }
         }
     }
 
     footer {
-
+        margin-top: 100px;
     .footerlogo {
         display: flex;
         justify-content: center;
