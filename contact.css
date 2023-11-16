@@ -1,4 +1,5 @@
 body {
+  background-color: #f8f7db;
   font-family: "Roboto", sans-serif;
 }
 body header {
@@ -26,10 +27,14 @@ body header .homebutton button {
 }
 body header .homebutton button:hover {
   box-shadow: 2px 2px;
-  color: grey;
+  color: rgb(187, 223, 221);
 }
 body header .logo img {
   width: 100px;
+  opacity: 0.7;
+}
+body header .logo img:hover {
+  opacity: 1;
 }
 body header nav {
   display: flex;
@@ -43,9 +48,12 @@ body header nav ul a {
   color: black;
 }
 body header nav button {
-  background: black;
-  color: white;
+  background: lightsalmon;
+  color: black;
   cursor: pointer;
+}
+body main .first {
+  margin-top: 100px;
 }
 body main .first h1 {
   font-size: 64px;
@@ -55,13 +63,28 @@ body main .first .hometext {
   display: flex;
   justify-content: center;
 }
+body main .first .hometext form input {
+  background-color: #f8f7db;
+}
+body main .first .hometext form button {
+  margin-top: 30px;
+  color: black;
+  background-color: lightsalmon;
+}
+body main .first .hometext form button:hover {
+  box-shadow: 3px 3px;
+}
 body main .first .information {
-  margin-top: 80px;
   margin-left: 50px;
 }
 body main .first .information .infoTwo img {
   width: 64px;
   margin-right: 20px;
+  transition: 0.4s;
+}
+body main .first .information .infoTwo img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 body main .first .information .infoTwo .infoTwoA {
   display: flex;
@@ -150,10 +173,13 @@ body footer .logotag .tags {
   padding-left: 10px;
 }
 body footer .logotag .tags button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 0 20px;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
+}
+body footer .logotag .tags button:hover {
+  box-shadow: 2px 2px;
 }/*# sourceMappingURL=contact.css.map */

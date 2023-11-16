@@ -1,4 +1,5 @@
 body {
+    background-color: #f8f7db;
     font-family: 'Roboto', sans-serif;
     header {
         display: flex;
@@ -13,8 +14,8 @@ body {
             display: flex;
             margin-top:20px;
             button {
-                background-color: black;
-                color: white;
+                background-color: lightsalmon;
+                color: black;
                 padding: 0 20px;
                 border-radius: 10px;
                 cursor: pointer;
@@ -23,12 +24,16 @@ body {
                 font-size: 20px;
                 }
             button:hover {
-                box-shadow: 2px 2px;
-                color: grey;
+                box-shadow: 3px 3px;
+                color: black;
             }
         }
         .logo img {
             width: 100px;
+            opacity: 0.7;
+        }
+        .logo img:hover {
+            opacity: 1;
         }
 
         nav {
@@ -45,7 +50,7 @@ body {
             }
 
             button{
-                background: black;
+                background: lightsalmon;
                 color: white;
                 cursor: pointer;
             }
@@ -59,7 +64,11 @@ body {
             text-align: center;
             margin-top: 20px;
             margin-bottom: 100px;
-            font-size: 30px;
+            font-size: 30px;    
+            transition: 2s;
+        }
+        h1:hover {
+            transform: scale(1.1);
         }
             .hometext {
                display: flex;
@@ -74,12 +83,25 @@ body {
                     margin: auto;
                 }
                 .aboutme {
-                    background-color: lightsalmon;
+                     background-color: lightsalmon;
                     border-radius: 10px;
+                    padding: 0 10px 0 10px;
                 }
                 img {
                     margin-left: 50px;
                     border-radius: 10px;
+                    box-shadow: 5px 5px;
+                    color: lightsalmon;
+                    margin-top: 20px;
+                }
+                a {
+                    button {
+                        background-color: lightsalmon;
+                        font-size: 16px;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    }
+
                 }
             }
           .skills {
@@ -109,6 +131,32 @@ body {
                 padding: 0;
             }
             }
+            .blogs {
+                display: flex;
+                justify-content: center;
+                h3 {
+                    margin-right: 10px;
+                }
+                img {
+                    width: 300px;
+                }
+                .blogss {
+                    background-color: lightsalmon;
+                    text-align: center;
+                    border: 3px solid black;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    border-radius: 10px;
+                    transition: 0.4s;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+                .blogss:hover {
+                    transform: scale(1.1);
+                }
+            }
         }
         
         
@@ -132,12 +180,15 @@ body {
             .tags {
                 padding-left: 10px;
                 button {
-                    background-color: black;
-                    color: white;
+                    background-color: lightsalmon;
+                    color: black;
                     padding: 0 20px;
                     border-radius: 10px;
                     cursor: pointer;
                     margin-bottom: 10px;
+                }
+                button:hover {
+                    box-shadow: 2px 2px;
                 }
             }
         }

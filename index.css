@@ -1,4 +1,5 @@
 body {
+  background-color: #f8f7db;
   font-family: "Roboto", sans-serif;
 }
 body header {
@@ -10,23 +11,6 @@ body header .homenav {
 }
 body header .heading {
   display: flex;
-}
-body header .homebutton {
-  display: flex;
-  margin-top: 20px;
-}
-body header .homebutton button {
-  background-color: black;
-  color: white;
-  padding: 0 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-left: 25px;
-  margin-bottom: 20px;
-}
-body header .homebutton button:hover {
-  box-shadow: 2px 2px;
-  color: grey;
 }
 body header .logo img {
   width: 100px;
@@ -47,35 +31,46 @@ body header nav ul a {
   color: black;
 }
 body header nav button {
-  background: black;
-  color: white;
+  background: lightsalmon;
+  color: black;
   cursor: pointer;
+}
+body main {
+  margin-top: 100px;
 }
 body main .first {
   display: flex;
   justify-content: center;
 }
 body main .first .homephoto > img {
-  border-radius: 10px;
+  border-radius: 5px;
   width: 400px;
-  box-shadow: 10px 10px;
-  color: rgb(187, 223, 221);
+  box-shadow: 8px 8px;
+  color: lightsalmon;
   transition: 0.4s;
 }
 body main .first .homephoto > img:hover {
   transform: scale(1.05);
 }
 body main .first .hometext {
-  margin-left: 50px;
+  margin-left: 80px;
+}
+body main .first .hometext img {
+  width: 50px;
 }
 body main .first .hometext button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 14px 28px;
   border-radius: 10px;
   cursor: pointer;
 }
+body main .first .hometext button:hover {
+  box-shadow: 5px 5px;
+  color: black;
+}
 body main .first .hometext .firsthalftitle {
+  color: rgb(32, 31, 31);
   display: flex;
 }
 body main .first .hometext h1 {
@@ -105,22 +100,26 @@ body main .first .hometext .interact:hover:after {
 }
 body main .first .hometext p {
   margin: 0;
+  color: #05386b;
+}
+body main .first .hometext .developer {
+  margin-bottom: 36px;
 }
 body main .first .homebutton {
   display: flex;
   margin-top: 20px;
 }
 body main .first .homebutton button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 14px 28px;
   border-radius: 10px;
   cursor: pointer;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 body main .first .homebutton button:hover {
   box-shadow: 5px 5px;
-  color: rgb(107, 201, 201);
+  color: black;
 }
 body main .first .homebutton h5 {
   margin: 5px;
@@ -147,7 +146,7 @@ body main .first .homebutton h5:hover:after {
 }
 body main .first .follow {
   display: flex;
-  margin-top: 20px;
+  margin: 20px;
 }
 body main .first .follow p {
   margin: 5px;
@@ -162,10 +161,12 @@ body main .first .follow img {
   padding: 0;
 }
 body main .second {
-  padding-top: 50px;
+  padding: 20px;
   display: flex;
-  margin-top: 100px;
   justify-content: center;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-right: 150px;
 }
 body main .second .clients {
   padding-top: 30px;
@@ -201,10 +202,13 @@ body footer .logotag .tags {
   padding-left: 10px;
 }
 body footer .logotag .tags button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 0 20px;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
+}
+body footer .logotag .tags button:hover {
+  box-shadow: 2px 2px;
 }/*# sourceMappingURL=index.css.map */

@@ -1,4 +1,5 @@
 body {
+  background-color: #f8f7db;
   font-family: "Roboto", sans-serif;
 }
 body header {
@@ -16,8 +17,8 @@ body header .homebutton {
   margin-top: 20px;
 }
 body header .homebutton button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 0 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -26,11 +27,15 @@ body header .homebutton button {
   font-size: 20px;
 }
 body header .homebutton button:hover {
-  box-shadow: 2px 2px;
-  color: grey;
+  box-shadow: 3px 3px;
+  color: black;
 }
 body header .logo img {
   width: 100px;
+  opacity: 0.7;
+}
+body header .logo img:hover {
+  opacity: 1;
 }
 body header nav {
   display: flex;
@@ -44,7 +49,7 @@ body header nav ul a {
   color: black;
 }
 body header nav button {
-  background: black;
+  background: lightsalmon;
   color: white;
   cursor: pointer;
 }
@@ -56,6 +61,10 @@ body main h1 {
   margin-top: 20px;
   margin-bottom: 100px;
   font-size: 30px;
+  transition: 2s;
+}
+body main h1:hover {
+  transform: scale(1.1);
 }
 body main .hometext {
   display: flex;
@@ -73,10 +82,20 @@ body main .hometext h4 {
 body main .hometext .aboutme {
   background-color: lightsalmon;
   border-radius: 10px;
+  padding: 0 10px 0 10px;
 }
 body main .hometext img {
   margin-left: 50px;
   border-radius: 10px;
+  box-shadow: 5px 5px;
+  color: lightsalmon;
+  margin-top: 20px;
+}
+body main .hometext a button {
+  background-color: lightsalmon;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 body main .skills {
   display: flex;
@@ -105,6 +124,32 @@ body main .follow img {
   width: 25px;
   padding: 0;
 }
+body main .blogs {
+  display: flex;
+  justify-content: center;
+}
+body main .blogs h3 {
+  margin-right: 10px;
+}
+body main .blogs img {
+  width: 300px;
+}
+body main .blogs .blogss {
+  background-color: lightsalmon;
+  text-align: center;
+  border: 3px solid black;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+body main .blogs .blogss a {
+  text-decoration: none;
+  color: black;
+}
+body main .blogs .blogss:hover {
+  transform: scale(1.1);
+}
 body footer {
   margin-top: 100px;
 }
@@ -125,10 +170,13 @@ body footer .logotag .tags {
   padding-left: 10px;
 }
 body footer .logotag .tags button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 0 20px;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
+}
+body footer .logotag .tags button:hover {
+  box-shadow: 2px 2px;
 }/*# sourceMappingURL=about.css.map */

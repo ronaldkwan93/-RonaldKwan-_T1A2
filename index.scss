@@ -1,31 +1,17 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    background-color: #f8f7db;
+        font-family: 'Roboto', sans-serif;
     header {
         display: flex;
         justify-content: space-between;
+
         .homenav {
             text-decoration: underline;
         }
         .heading {
             display: flex;
         }
-        .homebutton {
-            display: flex;
-            margin-top:20px;
-            button {
-                background-color: black;
-                color: white;
-                padding: 0 20px;
-                border-radius: 10px;
-                cursor: pointer;
-                margin-left: 25px;
-                margin-bottom: 20px;
-                }
-            button:hover {
-                box-shadow: 2px 2px;
-                color: grey;
-            }
-            }
+        
         .logo img {
             width: 100px;
             opacity: 0.7;
@@ -48,8 +34,8 @@ body {
             }
 
             button{
-                background: black;
-                color: white;
+                background: lightsalmon;
+                color: black;
                 cursor: pointer;
             }
             
@@ -57,14 +43,15 @@ body {
     }
 
     main {
+        margin-top: 100px;
         .first {
             display: flex;
             justify-content: center;
             .homephoto > img{ 
-                    border-radius: 10px;
+                    border-radius: 5px;
                     width: 400px;
-                    box-shadow: 10px 10px;
-                    color: rgb(187, 223, 221);
+                    box-shadow: 8px 8px;
+                    color: lightsalmon;
                     transition: 0.4s;
             }
             .homephoto >img:hover {
@@ -72,15 +59,23 @@ body {
             }    
             
             .hometext {
-                margin-left: 50px;
+                margin-left: 80px;
+                img {
+                    width: 50px;
+                }
                 button {
-                    background-color: black;
-                    color: white;
+                    background-color: lightsalmon;
+                    color: black;
                     padding: 14px 28px;
                     border-radius: 10px;
                     cursor: pointer;
                 }
+                button:hover {
+                    box-shadow: 5px 5px;
+                    color: black;
+                }
                 .firsthalftitle {
+                    color: rgb(32, 31, 31);
                     display: flex;
                     }
                 h1 {
@@ -100,8 +95,7 @@ body {
                     height: 2px;
                     bottom: 0;
                     left: 0;
-                    background-color: 
-                    #000000;
+                    background-color: #000000;
                     transform-origin: bottom right;
                     transition: transform 0.5s ease-out;
                 }
@@ -111,23 +105,26 @@ body {
                 }
                 p {
                     margin: 0;
+                    color: #05386b;
                 }
-                
+                .developer {
+                    margin-bottom: 36px;
+                }
             }
             .homebutton {
                 display: flex;
                 margin-top:20px;
                 button {
-                    background-color: black;
-                    color: white;
+                    background-color: lightsalmon;
+                    color: black;
                     padding: 14px 28px;
                     border-radius: 10px;
                     cursor: pointer;
-                    margin-bottom: 100px;
+                    margin-bottom: 20px;
                     }
                 button:hover {
                     box-shadow: 5px 5px;
-                    color: rgb(107, 201, 201);
+                    color: black;
                 }        
                 
                 h5 {
@@ -157,7 +154,7 @@ body {
         }
             .follow {
             display: flex;
-            margin-top: 20px;
+            margin: 20px;
             p {
                 margin: 5px;
                 font-size: 20px;
@@ -173,10 +170,12 @@ body {
             }
         }
         .second {
-            padding-top: 50px;
+            padding: 20px;
             display: flex;
-            margin-top: 100px;
             justify-content: center;
+            border-radius: 20px;
+            margin-top: 100px;
+            margin-right: 150px;
             .clients {
                 padding-top: 30px;
             }
@@ -213,12 +212,15 @@ body {
             .tags {
                 padding-left: 10px;
                 button {
-                    background-color: black;
-                    color: white;
+                    background-color: lightsalmon;
+                    color: black;
                     padding: 0 20px;
                     border-radius: 10px;
                     cursor: pointer;
                     margin-bottom: 10px;
+                }
+                button:hover {
+                    box-shadow: 2px 2px;
                 }
             }
         }

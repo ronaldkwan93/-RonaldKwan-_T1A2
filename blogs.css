@@ -1,4 +1,5 @@
 body {
+  background-color: #f8f7db;
   font-family: "Roboto", sans-serif;
 }
 body header {
@@ -16,8 +17,8 @@ body header .homebutton {
   margin-top: 20px;
 }
 body header .homebutton button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 0 20px;
   border-radius: 10px;
   cursor: pointer;
@@ -26,11 +27,14 @@ body header .homebutton button {
   font-size: 20px;
 }
 body header .homebutton button:hover {
-  box-shadow: 2px 2px;
-  color: grey;
+  box-shadow: 3px 3px;
 }
 body header .logo img {
   width: 100px;
+  opacity: 0.7;
+}
+body header .logo img:hover {
+  opacity: 1;
 }
 body header nav {
   display: flex;
@@ -44,7 +48,7 @@ body header nav ul a {
   color: black;
 }
 body header nav button {
-  background: black;
+  background: lightsalmon;
   color: white;
   cursor: pointer;
 }
@@ -54,7 +58,7 @@ body main {
   width: 80%;
 }
 body main .first img {
-  width: 70%;
+  width: 50%;
   margin-bottom: 50px;
 }
 body main .first .hometext {
@@ -81,10 +85,13 @@ body footer .logotag .tags {
   padding-left: 10px;
 }
 body footer .logotag .tags button {
-  background-color: black;
-  color: white;
+  background-color: lightsalmon;
+  color: black;
   padding: 0 20px;
   border-radius: 10px;
   cursor: pointer;
   margin-bottom: 10px;
+}
+body footer .logotag .tags button:hover {
+  box-shadow: 2px 2px;
 }/*# sourceMappingURL=blogs.css.map */
