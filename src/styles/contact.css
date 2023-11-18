@@ -1,10 +1,40 @@
+@media (max-width: 375px) {
+  .hometext {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .information .follow > p {
+    display: none;
+  }
+  .information .follow > a {
+    display: none;
+  }
+}
+@media (max-width: 857px) {
+  .hometext {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .information .follow > p {
+    display: none;
+  }
+  .information .follow > a {
+    display: none;
+  }
+}
 body {
   background-color: #f8f7db;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 body header {
   display: flex;
   justify-content: space-between;
+  background-color: lightsalmon;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 body header .contactnav {
   text-decoration: underline;
@@ -44,11 +74,17 @@ body header nav ul {
   padding: 5px;
 }
 body header nav ul a {
+  padding: 3px;
   text-decoration: none;
   color: black;
 }
+body header nav ul a:hover {
+  background-color: lightcoral;
+  border-radius: 5px;
+  padding: 3px;
+}
 body header nav button {
-  background: lightsalmon;
+  background: lightcoral;
   color: black;
   cursor: pointer;
 }
@@ -153,8 +189,10 @@ body main .first .follow img {
   width: 25px;
   padding: 0;
 }
-body footer {
-  margin-top: 200px;
+body main .first .backtotop {
+  text-align: end;
+  margin-right: 200px;
+  margin-top: 80px;
 }
 body footer .footerlogo {
   display: flex;

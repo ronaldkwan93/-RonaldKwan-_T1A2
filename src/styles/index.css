@@ -1,16 +1,111 @@
+@media (max-width: 1002px) {
+  .second h2 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 946px) {
+  .first .dp {
+    max-width: 250px;
+  }
+  .second h2 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 908px) {
+  .second h2 {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 839px) {
+  .second h2 {
+    display: none;
+  }
+  .second .clientlogo {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 777px) {
+  .first .hometext p {
+    font-size: 0.8em;
+  }
+  .second h2 {
+    display: none;
+  }
+  .second .clientlogo {
+    margin-left: 150px;
+  }
+  .second .stm > img {
+    max-width: 100px;
+  }
+  .second .afes > img {
+    max-width: 100px;
+  }
+  .second .wendy > img {
+    max-width: 180px;
+  }
+}
+@media (max-width: 701px) {
+  .first .dp {
+    max-width: 180px;
+  }
+  .first .hometext .firsthalftitle h1 {
+    font-size: 3em;
+  }
+  .first .hometext .developer h1 {
+    font-size: 3em;
+  }
+  .first .follow p {
+    display: none;
+  }
+  .second h2 {
+    display: none;
+  }
+}
+@media (max-width: 615px) {
+  h1 {
+    display: none;
+  }
+  .interact {
+    display: none;
+  }
+  p {
+    width: 200px;
+  }
+}
+@media (max-width: 492px) {
+  .first .dp {
+    max-width: 150px;
+    margin-left: 20px;
+  }
+  .first .follow img {
+    display: none;
+  }
+  .second .clientlogo .stm > img {
+    max-width: 70px;
+  }
+  .second .clientlogo .afes > img {
+    max-width: 70px;
+  }
+  .second .clientlogo .wendy > img {
+    max-width: 120px;
+  }
+}
 body {
   background-color: #f8f7db;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 body header {
   display: flex;
   justify-content: space-between;
+  background-color: lightsalmon;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 body header .homenav {
   text-decoration: underline;
-}
-body header .heading {
-  display: flex;
 }
 body header .logo img {
   width: 100px;
@@ -21,17 +116,21 @@ body header .logo img:hover {
 }
 body header nav {
   display: flex;
-  margin: 0;
 }
 body header nav ul {
   padding: 5px;
 }
 body header nav ul a {
+  padding: 3px;
   text-decoration: none;
   color: black;
 }
+body header nav ul a:hover {
+  background-color: lightcoral;
+  border-radius: 5px;
+}
 body header nav button {
-  background: lightsalmon;
+  background: lightcoral;
   color: black;
   cursor: pointer;
 }
@@ -53,7 +152,7 @@ body main .first .homephoto > img:hover {
   transform: scale(1.05);
 }
 body main .first .hometext {
-  margin-left: 80px;
+  margin-left: 20px;
 }
 body main .first .hometext img {
   width: 50px;
@@ -76,27 +175,6 @@ body main .first .hometext .firsthalftitle {
 body main .first .hometext h1 {
   font-size: 60px;
   margin: 0;
-}
-body main .first .hometext .interact {
-  margin: 0 0 0 10px;
-  display: inline-block;
-  position: relative;
-}
-body main .first .hometext .interact::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-body main .first .hometext .interact:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 body main .first .hometext p {
   margin: 0;
@@ -125,24 +203,6 @@ body main .first .homebutton h5 {
   margin: 5px;
   margin-left: 20px;
   margin-top: 15px;
-  display: inline-block;
-  position: relative;
-}
-body main .first .homebutton h5::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #000000;
-  transform-origin: bottom right;
-  transition: transform 0.5s ease-out;
-}
-body main .first .homebutton h5:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
 }
 body main .first .follow {
   display: flex;
@@ -175,15 +235,28 @@ body main .second .clientlogo {
   display: flex;
 }
 body main .second .clientlogo img {
-  margin-left: 50px;
-  width: 120px;
+  margin-left: 28px;
+  width: 160px;
   transition: 0.7s;
 }
 body main .second .clientlogo img:hover {
   transform: scale(1.05);
 }
-body footer {
-  margin-top: 100px;
+body main .second .clientlogo .afes img {
+  width: 140px;
+  margin-top: 15px;
+}
+body main .second .clientlogo .stm img {
+  width: 110px;
+}
+body main .second .clientlogo .wendy img {
+  width: 220px;
+  margin-left: 16px;
+}
+body main .backtotop {
+  text-align: end;
+  margin-right: 100px;
+  margin-top: 80px;
 }
 body footer .footerlogo {
   display: flex;

@@ -1,9 +1,44 @@
+@media (max-width: 375px) {
+    .hometext {
+        flex-direction: column;
+        margin: 20px;
+    }
+        .information {
+            .follow > p  {
+                display: none;
+            }
+            .follow > a  {
+                display: none;
+            }
+        }
+}
+
+@media (max-width: 857px) {
+    .hometext {
+        flex-direction: column;
+        margin: 20px;
+    }
+        .information {
+            .follow > p  {
+                display: none;
+            }
+            .follow > a  {
+                display: none;
+            }
+        }
+}
 body {
     background-color: #f8f7db;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
     header {
         display: flex;
         justify-content: space-between;
+        background-color: lightsalmon;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
         .contactnav {
             text-decoration: underline;
         }
@@ -41,15 +76,20 @@ body {
 
             ul {
                 padding: 5px;
-                
                 a {
+                    padding: 3px;
                     text-decoration: none;
                     color: black;
+                }
+                a:hover {
+                    background-color: lightcoral;
+                    border-radius: 5px;
+                    padding: 3px;
                 }
             }
 
             button{
-                background: lightsalmon;
+                background: lightcoral;
                 color: black;
                 cursor: pointer;
             }
@@ -169,11 +209,15 @@ body {
                 padding: 0;
             }
             }
+            .backtotop {
+                text-align: end;
+                margin-right: 200px;
+                margin-top: 80px;
+            }  
         }
     }
 
     footer {
-        margin-top: 200px;
     .footerlogo {
         display: flex;
         justify-content: center;
