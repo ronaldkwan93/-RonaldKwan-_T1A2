@@ -1,3 +1,4 @@
+// Media breakdowns @ certain points, fit more things
 @media (max-width:594px) {
     nav {
         ul {
@@ -65,6 +66,7 @@ body {
                 font-size: 20px;
                 }
             button:hover {
+                // When Button is hovered, shadow effect
                 box-shadow: 3px 3px;
                 color: black;
             }
@@ -73,6 +75,7 @@ body {
             width: 100px;
             opacity: 0.7;
         }
+        // Logo lights up when hovered
         .logo img:hover {
             opacity: 1;
         }
@@ -88,6 +91,7 @@ body {
                     text-decoration: none;
                     color: black;
                 }
+                // When Button is hovered, shadow effect
                 a:hover {
                     background-color: lightcoral;
                     border-radius: 5px;
@@ -114,6 +118,7 @@ body {
             font-size: 30px;    
             transition: 2s;
         }
+        // When quote is hovered, expands
         h1:hover {
             transform: scale(1.1);
         }
@@ -167,6 +172,7 @@ body {
                 margin: 0;
                 transition: 0.6s;
             }
+            // When img is hovered, expands
             img:hover {
                 transform: scale(1.1);
             }
@@ -202,6 +208,7 @@ body {
                         box-shadow: 0px 0px;
                     }
                 }
+                // When div is hovered, expands
                 .blogss:hover {
                     transform: scale(1.1);
                 }
@@ -241,6 +248,7 @@ body {
                     cursor: pointer;
                     margin-bottom: 10px;
                 }
+                // When button is hovered, shadow appears
                 button:hover {
                     box-shadow: 2px 2px;
                 }
