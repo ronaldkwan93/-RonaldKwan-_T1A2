@@ -22,7 +22,16 @@
     .hometext  {
         flex-direction: column;
     }
+    .blogs {
+        flex-direction: column;
+        max-width: 500px;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 } 
+
+
 
 body {
     background-color: #f8f7db;
@@ -35,6 +44,7 @@ body {
         position: fixed;
         left: 0;
         top: 0;
+        height: 68px;
         .aboutnav {
             text-decoration: underline;
         }
@@ -161,7 +171,7 @@ body {
                 transform: scale(1.1);
             }
             div {
-                margin:20px
+                margin:10px
             }
           }  
             .blogs {
